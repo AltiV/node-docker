@@ -4,6 +4,7 @@ services:
     image: nginx:stable-alpine
   node-app:
     build: .
+    image: altivu/node-app
     environment:
       - PORT=3000
     depends_on:
